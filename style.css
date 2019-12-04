@@ -1,0 +1,6 @@
+#bl img {
+  border: 100px solid;
+  border-image:
+      url("./img0.png")  /* source */
+      27
+}
