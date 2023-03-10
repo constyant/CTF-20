@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: escaper
+spec:
+  containers:
+    - name: escaper
+      image: docker.io/library/nginx:latest
+      volumeMounts:
+        - name: logs
+          mountPath: /var/log/host  
+  volumes:
+    - name: logs
+      hostPath:
+        path: /
+        type: Directory
