@@ -28,7 +28,7 @@ def main():
 		quit()
 
 	try:
-		gatewaymac=getmac(gatewayip)
+		gatewaymac="d2:f9:91:e7:2a:b9" #getmac(gatewayip)
 		print("Gateway MAC:", gatewaymac)
 	except:
 		print("Gateway is unreachable")
