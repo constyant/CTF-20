@@ -16,9 +16,9 @@ def restorearp(targetip, targetmac, sourceip, sourcemac):
 
 def main():
 	#targetip= raw_input("Enter Target IP:")
-        targetip = "10.112.128.4"
+	targetip = "10.112.128.4"
 	#gatewayip= raw_input("Enter Gateway IP:")
-        gateway = "10.112.128.1"
+	gateway = "10.112.128.1"
 
 	try:
 		targetmac=getmac(targetip)
